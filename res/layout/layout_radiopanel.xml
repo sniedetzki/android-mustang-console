@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:buttons="http://schemas.android.com/apk/res/com.digitalsan.mustang"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/presets_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dip"
+        android:gravity="center_horizontal"
+        android:text="Presets"
+        android:textSize="25sp" />
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:weightSum="10" >
+
+        <com.digitalsan.mustang.views.RadioButton
+            android:id="@+id/preset_button_0"
+			style="@style/preset_button_style"
+            android:text="0" 
+
+            />
+
+        <Button
+            android:id="@+id/preset_button_1"
+			style="@style/preset_button_style"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/preset_button_2"
+			style="@style/preset_button_style"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/preset_button_3"
+			style="@style/preset_button_style"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/preset_button_4"
+			style="@style/preset_button_style"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/preset_button_5"
+			style="@style/preset_button_style"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/preset_button_6"
+			style="@style/preset_button_style"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/preset_button_7"
+			style="@style/preset_button_style"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/preset_button_8"
+			style="@style/preset_button_style"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/preset_button_9"
+			style="@style/preset_button_style"
+            android:text="9" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip" >
+
+        <TextView
+            android:id="@+id/volume_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="- Volume +"
+            android:textSize="25sp" />
+
+        <com.digitalsan.mustang.views.Lever
+            android:id="@+id/volume_lever"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/volume_textview"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip" />
+
+        <TextView
+            android:id="@+id/tune_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/volume_lever"
+            android:layout_marginTop="10dip"
+            android:gravity="center_horizontal"
+            android:text="- Tune +"
+            android:textSize="25sp" />
+
+        <com.digitalsan.mustang.views.Lever
+            android:id="@+id/tune_lever"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tune_textview"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <Button
+            android:id="@+id/radio_button"
+            android:onClick="sourceButtonOnClick"
+            android:tag="RADIO"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/console_button"
+            android:text="AM/FM" />
+
+        <Button
+            android:id="@+id/cd_button"
+            android:onClick="sourceButtonOnClick"
+            android:tag="CD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/console_button"
+            android:text="CD" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <Button
+            android:id="@+id/sirius_button"
+            android:tag="SIRIUS"
+            android:onClick="sourceButtonOnClick"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/console_button"
+            android:text="Sirius" />
+
+        <Button
+            android:id="@+id/aux_button"
+            android:onClick="sourceButtonOnClick"
+            android:tag="AUX"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/console_button"
+            android:text="AUX" />
+    </LinearLayout>
+    
+    <com.digitalsan.mustang.views.SeekButton
+        android:layout_marginTop="10dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+</LinearLayout>

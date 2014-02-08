@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RadioButton">
+        <attr name="onPress" format="string" />
+        <attr name="onRelease" format="string" />
+    </declare-styleable>
+
+</resources>
