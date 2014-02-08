@@ -295,21 +295,21 @@ public class SeekButton extends View{
 		//----------------------------------------
 
 		canvas.save();
-		hButtonShape.getPaint().setStyle(Style.STROKE);
-		hButtonShape.getPaint().setColor(Color.BLACK);
-		hButtonShape.getPaint().setAlpha(255);
-		hButtonShape.getPaint().setStrokeWidth(5);
-		hButtonShape.getPaint().setShader(null);
-		vButtonShape.getPaint().setStyle(Style.STROKE);
-		vButtonShape.getPaint().setColor(Color.BLACK);
-		vButtonShape.getPaint().setAlpha(255);
-		vButtonShape.getPaint().setStrokeWidth(5);
-		vButtonShape.getPaint().setShader(null);
+		//hButtonShape.getPaint().setStyle(Style.STROKE);
+		//hButtonShape.getPaint().setColor(Color.BLACK);
+		//hButtonShape.getPaint().setAlpha(255);
+		//hButtonShape.getPaint().setStrokeWidth(5);
+		//hButtonShape.getPaint().setShader(null);
+		//vButtonShape.getPaint().setStyle(Style.STROKE);
+		//vButtonShape.getPaint().setColor(Color.BLACK);
+		//vButtonShape.getPaint().setAlpha(255);
+		//vButtonShape.getPaint().setStrokeWidth(5);
+		//vButtonShape.getPaint().setShader(null);
 
 
 		//TOP/LEFT BUTTON
-		hButtonShape.draw(canvas);
-		vButtonShape.draw(canvas);	
+		//hButtonShape.draw(canvas);
+		//vButtonShape.draw(canvas);	
 
 
 
@@ -326,8 +326,8 @@ public class SeekButton extends View{
 
 		//Bottom/RIGHT Button
 		canvas.rotate(180, getMeasuredWidth()/2, getMeasuredHeight()/2);;
-		hButtonShape.draw(canvas);
-		vButtonShape.draw(canvas);
+		//hButtonShape.draw(canvas);
+		//vButtonShape.draw(canvas);
 		canvas.restore();
 
 
